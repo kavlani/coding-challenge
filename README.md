@@ -31,7 +31,11 @@ namely hashtags and time_stamps.
 
 The program uses a pandas Series datastructure to store the time_stamps. However a 
 list datastructure is used to store the hashtags essentially a list of sets structure,
+<<<<<<< Updated upstream
 since each tweet is a set of hashtags.
+=======
+since the hashtags in a tweet are a set.
+>>>>>>> Stashed changes
 The pandas Series datastructure is used for its flexible and fast indexing capabilities 
 relative to a list implementation. 
 
@@ -153,8 +157,13 @@ Below is the output of the `tree` command:
 └── tweet_output
 └── output.txt
 
+<<<<<<< Updated upstream
 42 directories, 35 files
  
+=======
+
+42 directories, 35 files
+>>>>>>> Stashed changes
 
 ## Testing directory structure and output format
 [Back to Table of Contents](README.md#table-of-contents)

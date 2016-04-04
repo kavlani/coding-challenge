@@ -151,9 +151,10 @@ Below is the output of the `tree` command:
 ├── tweet_input
 │   └── tweets.txt
 └── tweet_output
-    └── output.txt
+└── output.txt
 
-42 directories, 35 files 
+42 directories, 35 files
+ 
 
 ## Testing directory structure and output format
 [Back to Table of Contents](README.md#table-of-contents)

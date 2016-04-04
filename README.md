@@ -1,4 +1,4 @@
-Insight Data Engineering - Coding Challenge solution by Kamal Avlani
+Insight - Coding Challenge solution by Kamal Avlani
 ====================================================================
 
 # Table of Contents

@@ -76,7 +76,7 @@ The contents of `src` contains a single file called "average_degree.py".
 Below is the output of the `tree` command:
 
 ├── insight_testsuite
-|   ├── results.txt
+│   ├── results.txt
 │   ├── run_tests.sh
 │   ├── temp
 │   │   ├── run.sh
@@ -154,7 +154,6 @@ Below is the output of the `tree` command:
     └── output.txt
 
 42 directories, 35 files
-
 ## Testing directory structure and output format
 [Back to Table of Contents](README.md#table-of-contents)
 

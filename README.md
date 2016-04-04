@@ -155,7 +155,6 @@ Below is the output of the `tree` command:
 
 42 directories, 35 files
 
-
 ## Testing directory structure and output format
 [Back to Table of Contents](README.md#table-of-contents)
 

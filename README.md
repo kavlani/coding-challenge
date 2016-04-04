@@ -55,12 +55,12 @@ tweets since typically the file read operations have high latency.
 
 Following are the program/package version dependencies :
 
-OS - Ubuntu 14.04.3
-Python - Python 2.7.11 :: Anaconda 2.4.1 (x86_64)
-Numpy - 1.10.1
-NetworkX - 1.10
-Pandas - 0.17.1
-JSON - 2.0.9
+1. OS - Ubuntu 14.04.3
+2. Python - Python 2.7.11 :: Anaconda 2.4.1 (x86_64)
+3. Numpy - 1.10.1
+4. NetworkX - 1.10
+5. Pandas - 0.17.1
+6. JSON - 2.0.9
 
 All these packages are available with the Ananconda2 install. 
 I have provided an install.sh script which installs Ananconda2, however requires accepting license manually. 
@@ -91,8 +91,8 @@ Below is the output of the `tree` command:
 │       ├── test-10k-tweets
 │       │   ├── tweet_input
 │       │   │   └── tweets.txt
-│       │   └── tweet_output
-│       │     └── output.txt
+│       │   └── tweet_output
+│       │       └── output.txt
 │       ├── test-1nodes-with-evict
 │       │   ├── tweet_input
 │       │   │   └── tweets.txt
@@ -151,7 +151,7 @@ Below is the output of the `tree` command:
 ├── tweet_input
 │   └── tweets.txt
 └── tweet_output
-└── output.txt
+    └── output.txt
 
 42 directories, 35 files
 

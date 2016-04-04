@@ -30,7 +30,8 @@ The hashtags and created_at fields from each tweet are extracted and stored in t
 namely hashtags and time_stamps.
 
 The program uses a pandas Series datastructure to store the time_stamps. However a 
-list datastructure is used to store the hashtags essentially a list of lists structure.
+list datastructure is used to store the hashtags essentially a list of sets structure,
+since each tweet is a set of hashtags.
 The pandas Series datastructure is used for its flexible and fast indexing capabilities 
 relative to a list implementation. 
 

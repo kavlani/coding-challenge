@@ -91,8 +91,8 @@ Below is the output of the `tree` command:
 │       ├── test-10k-tweets
 │       │   ├── tweet_input
 │       │   │   └── tweets.txt
-│       │   └── tweet_output
-│       │       └── output.txt
+│       │   └── tweet_output
+│       │     └── output.txt
 │       ├── test-1nodes-with-evict
 │       │   ├── tweet_input
 │       │   │   └── tweets.txt

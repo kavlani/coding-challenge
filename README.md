@@ -75,28 +75,85 @@ The contents of `src` contains a single file called "average_degree.py".
 
 Below is the output of the `tree` command:
 
-	├── README.md 
-	├── run.sh
-	├── src
-	│   └── average_degree.py
-	├── tweet_input
-	│   └── tweets.txt
-	├── tweet_output
-	│   └── output.txt
-	└── insight_testsuite
-	    ├── run_tests.sh
-	    └── tests
-	        └── test-2-tweets-all-distinct
-	        │   ├── tweet_input
-	        │   │   └── tweets.txt
-	        │   └── tweet_output
-	        │       └── output.txt
-	        └── your-own-test
-	            ├── tweet_input
-	            │   └── tweets.txt
-	            └── tweet_output
-	                └── output.txt
+├── insight_testsuite
+|   ├── results.txt
+│   ├── run_tests.sh
+│   ├── temp
+│   │   ├── run.sh
+│   │   ├── src
+│   │   │   ├── average_degree.py
+│   │   │   └── __init__.py
+│   │   ├── tweet_input
+│   │   │   └── tweets.txt
+│   │   └── tweet_output
+│   │       └── output.txt
+│   └── tests
+│       ├── test-10k-tweets
+│       │   ├── tweet_input
+│       │   │   └── tweets.txt
+│       │   └── tweet_output
+│       │       └── output.txt
+│       ├── test-1nodes-with-evict
+│       │   ├── tweet_input
+│       │   │   └── tweets.txt
+│       │   └── tweet_output
+│       │       └── output.txt
+│       ├── test-2-tweets-all-distinct
+│       │   ├── tweet_input
+│       │   │   └── tweets.txt
+│       │   └── tweet_output
+│       │       └── output.txt
+│       ├── test-empty-file
+│       │   ├── tweet_input
+│       │   │   └── tweets.txt
+│       │   └── tweet_output
+│       │       └── output.txt
+│       ├── test-evict-tweet
+│       │   ├── tweet_input
+│       │   │   └── tweets.txt
+│       │   └── tweet_output
+│       │       └── output.txt
+│       ├── test-malformed-tweets
+│       │   ├── tweet_input
+│       │   │   └── tweets.txt
+│       │   └── tweet_output
+│       │       └── output.txt
+│       ├── test-mixed-dates
+│       │   ├── tweet_input
+│       │   │   └── tweets.txt
+│       │   └── tweet_output
+│       │       └── output.txt
+│       ├── test-mixed-skip-evict-tweets
+│       │   ├── tweet_input
+│       │   │   └── tweets.txt
+│       │   └── tweet_output
+│       │       └── output.txt
+│       ├── test-no-input-file
+│       │   ├── tweet_input
+│       │   └── tweet_output
+│       │       └── output.txt
+│       ├── test-outside60sec-tweet
+│       │   ├── tweet_input
+│       │   │   └── tweets.txt
+│       │   └── tweet_output
+│       │       └── output.txt
+│       └── test-within60sec-tweets
+│           ├── tweet_input
+│           │   └── tweets.txt
+│           └── tweet_output
+│               └── output.txt
+├── install.sh
+├── README.md
+├── run.sh
+├── src
+│   ├── average_degree.py
+│   └── __init__.py
+├── tweet_input
+│   └── tweets.txt
+└── tweet_output
+    └── output.txt
 
+42 directories, 35 files
 
 ## Testing directory structure and output format
 [Back to Table of Contents](README.md#table-of-contents)

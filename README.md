@@ -31,7 +31,7 @@ namely hashtags and time_stamps.
 
 The program uses a pandas Series datastructure to store the time_stamps. However a 
 list datastructure is used to store the hashtags essentially a list of sets structure,
-since the hashtags in a tweet are a set.The pandas Series datastructure is used for its flexible 
+since the hashtags in a tweet are a set. The pandas Series datastructure is used for its flexible 
 and fast indexing capabilities relative to a list implementation. 
 
 
@@ -47,8 +47,8 @@ maintain the Twitter hashtag graph in order to calculate the average degree.
 
 Future Enhancements:
 
-Future enhancements to the program could be to work on batch of tweets while parallelizing the processing of 
-tweets since typically the file read operations have high latency. 
+Future enhancements to the program could be to work on batch of tweets while parallelizing 
+the processing of tweets since typically the file read operations have high latency. 
 
 ## Program and Package Version Details
 [Back to Table of Contents](README.md#table-of-contents)

@@ -1,4 +1,4 @@
-Insight - Coding Challenge solution by Kamal Avlani
+Coding Challenge solution by Kamal Avlani
 ====================================================================
 
 # Table of Contents

@@ -1,11 +1,12 @@
 #!/usr/bin/env python
 
-# Import the necessary methods from tweepy library
-from tweepy.streaming import StreamListener
-from tweepy import OAuthHandler
-from tweepy import Stream
+# Import the necessary methods
+
 import json
 import os
+
+tweets = []
+
 
 # loads Twitter credentials from .twitter file that is in the same directory as this script
 file_dir = os.path.dirname(os.path.realpath(__file__)) 
@@ -18,9 +19,9 @@ access_token_secret = twitter_cred["access_token_secret"]
 consumer_key = twitter_cred["consumer_key"]
 consumer_secret = twitter_cred["consumer_secret"]
 
+
 class StdOutListener(StreamListener):
-    """ 
-    A listener handles tweets that are the received from the stream.
+    """ A listener handles tweets that are the received from the stream.
     This is a basic listener that just prints received tweets to stdout.
     """
     def __init__(self, filename):
@@ -28,14 +29,22 @@ class StdOutListener(StreamListener):
 
     # this is the event handler for new data
     def on_data(self, data):
+        if data['lang'] == 'en':                 # only want to collect English-language tweets
+            tweets.append(data)
+        
         if not os.path.isfile(self.filename):    # check if file doesn't exist
             f = file(self.filename, 'w')
             f.close()
         with open(self.filename, 'ab') as f:     
-            f.write(data)
+            f.write(tweets)
         f.closed
-        
-    # this is the event handler for errors    
+    
+    
+        if len(tweets) >= num_tweets: # stop when we've collected enough
+            self.disconnect()
+
+
+    # this is the event handler for errors
     def on_error(self, status):
         print(status)
         self.disconnect()
